@@ -1,0 +1,21 @@
+/* Full Page Images */
+
+body {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    color: #926239;
+    line-height: 1.6;
+}
+
+#showcase {
+    background-image: url("../img/McShane.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
