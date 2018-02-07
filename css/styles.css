@@ -53,7 +53,7 @@ body {
     font-family: 'Rubik', sans-serif;
     font-size: 17px;
     color: #006899;
-    background: linear-gradient(to bottom right, #006899, #070C23);
+    background: linear-gradient(to bottom right, #006899, #070C23) no-repeat;
 }
 
 #showcase {
@@ -355,6 +355,132 @@ body {
     transform: scale(1.125);
 }
 
+/* Contact Styles */
+
+.contactWrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+}
+
+.contactMe {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 600px;
+    padding-top: 120px;
+}
+
+.contactBlurb {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px 0px 20px;
+    padding: 0px 20px;
+    width: 100%;
+    height: 600px;
+    background-color: #fff;
+}
+
+#container {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    padding-top: 120px;
+}
+
+.contact {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: none;
+}
+
+.contact label,
+.contact input,
+.contact textarea {
+    font-family: 'Nunito', sans-serif; 
+    font-weight: bold;
+    border: none;
+    color: #4A6870;
+    font-size: 1em;
+    margin-bottom: 10px;
+    width: 80%; 
+    height: 30px;
+    border-radius: 5px;
+    padding: 12px;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+    background-color: #eee;
+    font-style: italic; 
+    font-weight: normal;
+}
+
+.contactInformation {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px 0px 10px;
+    padding: 0px 20px;
+    width: 100%;
+    height: 600px;
+    background-color: #fff;
+}
+
+label {
+    color: #4A6870;
+    font-size: 1.125em;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 0;
+    background-color: #CDE9F4;
+    transition: ease-in-out 0.5s;
+}
+
+.contact textarea {
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#submit {
+    padding: 10px;
+    color: #fff;
+    background-color: #002755;
+    font-size: 1.4em;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    width: 83%;
+    transition: 1s;
+}
+
+#submit:hover {
+    background-color: #006899;
+}
+
 /* Footer Styles */
 
 .footer {
@@ -363,8 +489,8 @@ body {
     bottom: 0;
     width: 100%;
     height: 1.5em;
-    background-color: rgba(0, 0, 0, 0.5);
-    font-family: 'Rubik', sans-serif;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-family: 'Quicksand', sans-serif;
     color: #768388;
     text-align: center;
     text-shadow: 3px 3px 7px black;

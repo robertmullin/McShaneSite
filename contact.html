@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Michael McShane || Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Inconsolata|Nunito|Nunito+Sans|Pacifico|Quicksand|Rubik:900|Rubik:200|VT323" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="otherNav">
+        <nav class="mainNav">
+
+            <div class="menuDiv">
+                <a href="index.html">Home</a>
+            </div>
+
+            <div class="menuDiv">
+                <a href="#">About</a>
+            </div>
+
+            <div class="menuDiv active">
+                <a href="#">Contact</a>
+            </div>
+
+            <div class="menuDiv">
+                <a href="gallery.html">Gallery</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <div class="contactWrapper">
+
+        <div class="contactMe">
+            
+            <div class="contactBlurb">
+                
+            </div>
+            
+        </div>
+
+
+        <div id="container">
+
+            <form method="post" class="contactInformation">
+
+                <fieldset class="contact">
+
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" id="name" value="" placeholder="Required" pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="firstname lastname" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Required" required>
+
+                    <label for="message">Message</label>
+
+                    <textarea id="textarea" cols="30" rows="8" placeholder="Required" required></textarea>
+
+
+                </fieldset>
+                <!-- end contact -->
+
+                <button type="submit" id="submit" value="Sign Up">Send</button>
+
+
+            </form>
+            <!-- end contact_information -->
+
+        </div>
+        <!-- end container -->
+    </div>
+
+    <footer class="footer">
+        <p>Michael McShane &copy; 2018</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
