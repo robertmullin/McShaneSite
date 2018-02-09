@@ -20,11 +20,11 @@
             </div>
 
             <div class="menuDiv">
-                <a href="#">About</a>
+                <a href="about.html">About</a>
             </div>
 
             <div class="menuDiv active">
-                <a href="#">Contact</a>
+                <a href="contact.html">Contact</a>
             </div>
 
             <div class="menuDiv">
@@ -39,15 +39,23 @@
         <div class="contactMe">
             
             <div class="contactBlurb">
+                <h1>Get in touch.</h1>
+                
+                <p><i class="fas fa-phone-square fa-lg"></i>: (+1)647-233-5224</p>
+                
+                <p><i class="fas fa-envelope-square fa-lg"></i>: info@michaelmcshane.ca</p>
+                
+                <p>If you have any questions or concerns with any of your design needs, from production design, business or residential, please complete the form and I will get back to you as soon as possible.</p>
                 
             </div>
             
         </div>
 
 
-        <div id="container">
-
-            <form method="post" class="contactInformation">
+        <div id="container">  
+           
+         
+            <form action="//formspree.io/bobmullin@hotmail.com" method="post" class="contactInformation">
 
                 <fieldset class="contact">
 
@@ -55,17 +63,19 @@
                     <input type="text" name="name" id="name" value="" placeholder="Required" pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="firstname lastname" required>
 
                     <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="Required" required>
+                    <input type="email" id="email" name="_replyto" placeholder="Required" required>
 
                     <label for="message">Message</label>
 
                     <textarea id="textarea" cols="30" rows="8" placeholder="Required" required></textarea>
+                    
+                    <input type="hidden" name="_next" value="http://mysite.com/#contact" />
 
 
                 </fieldset>
                 <!-- end contact -->
 
-                <button type="submit" id="submit" value="Sign Up">Send</button>
+                <button type="submit" id="submit" value="Send">Send</button>
 
 
             </form>

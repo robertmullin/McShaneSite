@@ -104,7 +104,7 @@ body {
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Nunito', sans-serif;
     text-transform: uppercase;
     font-weight: bolder;
 }
@@ -143,7 +143,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
-    font-family: 'Rubik', 'Helvetica', sans-serif;
+    font-family: 'Nunito', sans-serif;
 
 }
 
@@ -287,6 +287,7 @@ body {
     height: 300px;
     background-color: cadetblue;
     border-radius: 50%;
+    border: 3px solid #768388;
 }
 
 .bioHeading {
@@ -382,13 +383,29 @@ body {
     display: flex;
     flex-flow: column;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     margin: 0px 10px 0px 20px;
     padding: 0px 20px;
     width: 100%;
     height: 600px;
     background-color: #fff;
+    font-family: 'Nunito', sans-serif;
+    color: #4A6870;
+}
+
+.contactBlurb h1 {
+    padding: 1em;
+    align-self: center;
+}
+
+.contactBlurb p {
+    font-size: 1.5em;
+    padding-top: 1em;
+}
+
+.contactBlurb i {
+    padding: .5em;
 }
 
 #container {
