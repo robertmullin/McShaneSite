@@ -166,6 +166,7 @@ body {
     padding: 10px;
     height: 50px;
     width: 125px;
+    transition: 1s ease-in-out;
 }
 
 .menuDiv:hover {
@@ -175,7 +176,7 @@ body {
 .menuDiv a:hover {
     color: white;
     transform: scale(1.125);
-    transition: 1s;
+    transition: 1s ease-in-out;
 }
 
 .active {
@@ -188,6 +189,87 @@ body {
 
 .active a {
     color: white;
+}
+
+.galleryNav {
+    display: flex;
+    width: 30%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.galleryNav i {
+    color: #4A6870;
+}
+
+.galleryMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 100%;
+    transition: .5s ease-in-out;
+}
+
+.galleryMenu p {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.125em;
+    font-weight: 200;
+    text-align: center;
+    color: #4A6870;
+    padding: 30px 10px;
+    transition: .5s ease-in-out;
+}
+
+.galleryMenu p:hover {
+    color: white;
+    cursor: pointer;
+}
+
+/* Gallery Dropdown */
+
+.comDrop,
+.resDrop {
+    display: none;
+	position:absolute;
+    font-size: 1.125em;
+    text-transform: uppercase;
+    list-style: none;
+	top: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 15px;
+    width: 150px;
+    transition: .5s ease-in-out;
+}
+
+.comDrop li,
+.resDrop li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.comDrop a,
+.resDrop a {
+    width: 150px;
+    padding: 5px 20px;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.comDrop a:hover,
+.resDrop a:hover {
+    color: #fff;
+}
+
+.galleryMenu:hover > .comDrop,
+.galleryMenu:hover > .resDrop {
+    display: block;
+    transition: .5s ease-in-out;
 }
 
 /* Gallery Styles */
