@@ -193,7 +193,7 @@ body {
 
 .galleryNav {
     display: flex;
-    width: 30%;
+    width: 40%;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -232,7 +232,8 @@ body {
 /* Gallery Dropdown */
 
 .comDrop,
-.resDrop {
+.resDrop,
+.CBCDrop {
     display: none;
 	position:absolute;
     font-size: 1.125em;
@@ -246,7 +247,8 @@ body {
 }
 
 .comDrop li,
-.resDrop li {
+.resDrop li,
+.CBCDrop li {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -254,7 +256,8 @@ body {
 }
 
 .comDrop a,
-.resDrop a {
+.resDrop a,
+.CBCDrop a {
     width: 150px;
     padding: 5px 20px;
     margin: 10px 0px;
@@ -264,12 +267,14 @@ body {
 }
 
 .comDrop a:hover,
-.resDrop a:hover {
+.resDrop a:hover,
+.CBCDrop a:hover {
     color: #fff;
 }
 
 .galleryMenu:hover > .comDrop,
-.galleryMenu:hover > .resDrop {
+.galleryMenu:hover > .resDrop,
+.galleryMenu:hover > .CBCDrop{
     display: block;
     transition: .5s ease-in-out;
 }
@@ -314,7 +319,7 @@ body {
     margin: 0;
     overflow: hidden;
 }
-
+     
 .imgs img {
     padding: 0px 0px 10px 0px;
     margin: 0;
@@ -334,6 +339,52 @@ body {
 .fade-in {
     opacity: 0;
     animation: fadeIn 0.5s ease-in 1 forwards;
+}
+
+/* Password Protect Styles */
+
+.passwordContainer {
+    display: none;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    background-color: rgba(0,0,0,.9);
+    background-size: cover;
+}
+
+.passwordContainer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 25%;
+    background: white;
+    margin: 0 auto;
+}
+
+.passwordContainer input {
+    width: 75%;
+    height: 2em;
+    margin: .5em;
+}
+
+.passwordBtn {
+    padding: 10px;
+    color: #fff;
+    background-color: #4A6870;
+    font-size: 1.4em;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    width: 83%;
+    transition: 1s;
+}
+
+.passwordBtn:hover {
+    background-color: #006899;
 }
 
 /* About Styles */
@@ -569,7 +620,7 @@ select:focus {
 #submit {
     padding: 10px;
     color: #fff;
-    background-color: #002755;
+    background-color: #4A6870;
     font-size: 1.4em;
     text-align: center;
     border-radius: 5px;
@@ -580,6 +631,25 @@ select:focus {
 
 #submit:hover {
     background-color: #006899;
+}
+
+.thanksHeader {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.5em;
+    color: #4A6870;
+    padding: .5em;
+}
+
+.thanksMessage {
+    font-family: 'Nunito', sans-serif;
+    color: #4A6870;
+    font-size: 1.5em;
+    padding: .5em;
+}
+
+.thanksIcon {
+    font-size: 8em;
+    color: #4A6870;
 }
 
 /* Footer Styles */

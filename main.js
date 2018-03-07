@@ -1,4 +1,3 @@
-
 // Gallery Styles 
 
 const current = document.querySelector("#current");
@@ -12,18 +11,30 @@ imgs[0].style.opacity = opacity;
 imgs.forEach(img => img.addEventListener("click", imgClick));
 
 function imgClick(e) {
-  // Reset the opacity
-  imgs.forEach(img => (img.style.opacity = 1));
+    // Reset the opacity
+    imgs.forEach(img => (img.style.opacity = 1));
 
-  // Change current image to src of clicked image
-  current.src = e.target.src;
+    // Change current image to src of clicked image
+    current.src = e.target.src;
 
-  // Add fade in class
-  current.classList.add("fade-in");
+    // Add fade in class
+    current.classList.add("fade-in");
 
-  // Remove fade-in class after .5 seconds
-  setTimeout(() => current.classList.remove("fade-in"), 500);
+    // Remove fade-in class after .5 seconds
+    setTimeout(() => current.classList.remove("fade-in"), 500);
 
-  // Change the opacity to opacity var
-  e.target.style.opacity = opacity;
+    // Change the opacity to opacity var
+    e.target.style.opacity = opacity;
+}
+
+// Password Field 
+
+function isValid() {
+    var password = document.getElementById('password').value;
+    var success = document.getElementsByClassName("passwordContainer");
+    if (password == "admin") {
+        success[0].style.display = "none";
+    } else {
+        alert('Wrong Password');
+    }
 }
