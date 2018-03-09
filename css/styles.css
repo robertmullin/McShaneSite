@@ -241,7 +241,7 @@ body {
     list-style: none;
 	top: 100%;
 	background-color: rgba(0, 0, 0, 0.7);
-	padding: 15px;
+	padding: 5px;
     width: 150px;
     transition: .5s ease-in-out;
 }
@@ -251,7 +251,7 @@ body {
 .CBCDrop li {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -259,7 +259,7 @@ body {
 .resDrop a,
 .CBCDrop a {
     width: 150px;
-    padding: 5px 20px;
+    padding: 5px;
     margin: 10px 0px;
     cursor: pointer;
     color: #4A6870;
@@ -412,17 +412,18 @@ body {
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    height: 90%;
     padding: 50px;
-    margin: 50px;
+    margin: 0px 50px;
     background-color: #fff;
 }
 
 .bioImage {
     width: 300px;
     height: 300px;
-    background-color: cadetblue;
+    background-color: #4A6870;
     border-radius: 50%;
-    border: 3px solid #768388;
+    border: 3px solid #4A6870;
 }
 
 .bioHeading {
@@ -430,7 +431,8 @@ body {
     font-weight: bold;
     font-size: 2em;
     color: #4A6870;
-    padding-top: 25px
+    padding-top: 25px;
+    text-align: center;
 }
 
 .bioText {
@@ -489,6 +491,30 @@ body {
 .socialDiv a:hover {
     color: #fff;
     transform: scale(1.125);
+}
+
+.xpwrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 960px;
+    background-color: #000;
+    background: linear-gradient(180deg, #070C23, #006899);
+}
+
+.experience {
+    width: 33%;
+    height: 860px;
+    background-color: white;
+    margin: 1em 3em;
+    padding: 10px 50px;
+}
+
+.xpLink {
+    text-decoration: none;
+    color: #4A6870;
 }
 
 /* Contact Styles */
@@ -608,6 +634,7 @@ input:focus,
 textarea:focus,
 select:focus {
     outline: 0;
+    font-style: normal;
     background-color: #CDE9F4;
     transition: ease-in-out 0.5s;
 }
