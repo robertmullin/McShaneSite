@@ -57,7 +57,7 @@ body {
 }
 
 #showcase {
-    background-image: url("../img/1_1.png");
+    background-image: url("../img/1_1.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -301,7 +301,7 @@ body {
 
 .main-img {
     position: fixed;
-    top: 150px;
+    top: 125px;
     right: 50px;
     grid-area: main;
     max-width: 900px;
@@ -315,7 +315,7 @@ body {
     grid-area: sidebar;
     width: 80%;
     grid-template-rows: repeat(8, 1fr);
-    padding: 50px;
+    padding: 25px 50px;
     margin: 0;
     overflow: hidden;
 }
@@ -345,7 +345,6 @@ body {
 
 .galleryContainer {
     width: 100%;
-    height: 2000px;
     background: linear-gradient(180deg, #006899, #070C23);
     display: flex;
     flex-direction: row;
@@ -423,13 +422,13 @@ body {
 /* Password Protect Styles */
 
 .passwordContainer {
-    display: none;
+    display: block;
     align-items: center;
     position: fixed;
     width: 100vw;
     height: 100vh;
     z-index: 2;
-    background-color: rgba(0, 0, 0, .9);
+    background-color: rgba(0, 0, 0, .95);
     background-size: cover;
 }
 
