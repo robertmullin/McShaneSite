@@ -32,7 +32,7 @@ function imgClick(e) {
 function isValid() {
     var password = document.getElementById('password').value;
     var success = document.getElementsByClassName("passwordContainer");
-    if (password == "admin") {
+    if (password == "mcshaneapproved") {
         success[0].style.display = "none";
     } else {
         alert('Wrong Password');
