@@ -9,26 +9,20 @@ Grey w/ Blue:-- #4A6870
 Aqua:---------- #9CCAC2
 Cream 1:------- #DBF7DF
 Cream 2:------- #E9F9DF
-
-
 .color-primary-0 { color: #0284CA }	Main Primary color
 .color-primary-1 { color: #2FA5E5 }
 .color-primary-2 { color: #099CEB }
 .color-primary-3 { color: #026194 }
 .color-primary-4 { color: #014B72 }
 .color-primary-5 { color: #002132 }
-
 As RGBa codes 
-
 .rgba-primary-0 { color: rgba(  2,132,202,1) }	Main Primary color
 .rgba-primary-1 { color: rgba( 47,165,229,1) }
 .rgba-primary-2 { color: rgba(  9,156,235,1) }
 .rgba-primary-3 { color: rgba(  2, 97,148,1) }
 .rgba-primary-4 { color: rgba(  1, 75,114,1) }
 .rgba-primary-5 { color: rgba(  0, 33,50,1 ) }
-
 Fonts
-
 font-family: 'Rubik', sans-serif;
 font-family: 'Pacifico', cursive;
 font-family: 'Quicksand', sans-serif;
@@ -37,7 +31,6 @@ font-family: 'Cabin', sans-serif;
 font-family: 'VT323', monospace;
 font-family: 'Nunito', sans-serif;
 font-family: 'Nunito Sans', sans-serif;
-
 */
 
 * {
@@ -117,7 +110,6 @@ body {
     text-decoration: none;
     background-color: #070C23;
 }
-
 .navbarHome a:hover {
     background-color: #4A6870;
     color: #070C23;
@@ -492,7 +484,7 @@ body {
     align-items: center;
     height: 90%;
     padding: 50px;
-    margin: 0px 50px;
+    margin: 25px 50px;
     background-color: #fff;
 }
 
@@ -665,7 +657,6 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    
     border: none;
 }
 
@@ -677,7 +668,7 @@ body {
     border: none;
     color: #4A6870;
     font-size: 1em;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     width: 80%;
     height: 30px;
     border-radius: 5px;
